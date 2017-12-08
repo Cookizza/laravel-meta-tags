@@ -14,7 +14,7 @@ While there is a few forks of this original package this is the only one kept up
 From the command line run
 
 ```
-$ composer require kekoapp/laravel-meta-tags
+$ composer require Cookizza/laravel-meta-tags
 ```
 
 Once Meta Tags is installed you need to register the service provider with the application. Open up `config/app.php` and find the `providers` key.
@@ -22,7 +22,7 @@ Once Meta Tags is installed you need to register the service provider with the a
 ```php
 'providers' => array(
 
-    KekoApp\LaravelMetaTags\MetaTagsServiceProvider::class,
+    Cookizza\LaravelMetaTags\MetaTagsServiceProvider::class,
 
 )
 ```
@@ -32,7 +32,7 @@ Meta Tags also ships with a facade which provides the static syntax for creating
 ```php
 'aliases' => array(
 
-    'MetaTag'   => KekoApp\LaravelMetaTags\Facades\MetaTag::class,
+    'MetaTag'   => Cookizza\LaravelMetaTags\Facades\MetaTag::class,
 
 )
 ```
@@ -42,7 +42,7 @@ Meta Tags also ships with a facade which provides the static syntax for creating
 Run this on the command line from the root of your project:
 
 ```
-$ php artisan vendor:publish --provider="KekoApp\LaravelMetaTags\MetaTagsServiceProvider"
+$ php artisan vendor:publish --provider="Cookizza\LaravelMetaTags\MetaTagsServiceProvider"
 ```
 
 A configuration file will be publish to `config/meta-tags.php`.
